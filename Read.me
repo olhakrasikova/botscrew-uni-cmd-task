@@ -1,0 +1,24 @@
+
+create table lectors
+(
+    id                    uuid,
+    name                  varchar,
+    salary                integer,
+    is_head_of_department boolean,
+    degree                varchar
+);
+
+create table departments
+(
+    id                      uuid,
+    department_name         varchar,
+    head_of_department_name varchar
+);
+
+
+create table "lectorsOnDepartments"
+(
+    lectors_id     uuid,
+    departments_id uuid
+);
+
